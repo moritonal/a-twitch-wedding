@@ -1,0 +1,31 @@
+{
+  "name": "a-twitch-wedding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel ./public/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "closed",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.16",
+    "jquery": "^3.3.1",
+    "parcel": "^1.12.3",
+    "popper.js": "^1.15.0",
+    "twitch-embed": "^1.1.4",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-property-decorator": "^8.1.0"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
+    "sass": "^1.17.4",
+    "typescript": "^3.4.2",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
