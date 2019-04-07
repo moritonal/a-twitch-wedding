@@ -9464,8 +9464,8 @@ function (_super) {
 
   TwitchPlayer.prototype.mounted = function () {
     var embed = new Twitch.Embed("twitch-embed", {
-      width: 850,
       height: 480,
+      width: 853.333333333,
       layout: "video",
       theme: "dark",
       channel: "moritonal"
@@ -9505,7 +9505,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("div", { attrs: { id: "twitch-embed" } })])
+    return _c("div", [
+      _c("div", {
+        staticClass: "justify-content-flex-end",
+        attrs: { id: "twitch-embed" }
+      })
+    ])
   }
 ]
 render._withStripped = true
@@ -14490,7 +14495,7 @@ function (_super) {
 
   Object.defineProperty(App.prototype, "localTime", {
     get: function get() {
-      return this.targetUtc.local().format("Do MMMM YYYY [at] HH:mm [your time]");
+      return this.targetUtc.local().format("HH:mm[ | ]DD[ | ]MM[ | ]YYYY");
     },
     enumerable: true,
     configurable: true
@@ -14545,35 +14550,43 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "app" } }, [
     _c("div", { staticClass: "container-fluid overflow-hidden" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "row px-4" }, [
         _c(
           "div",
-          { staticClass: "d-flex col-lg-12 justify-content-center p-2" },
+          {
+            staticClass:
+              "d-flex col-md-12 justify-content-center p-0 flex-column pt-4"
+          },
+          [
+            _c("div", { staticClass: "text-center p-3" }, [
+              _c("h2", [_vm._v("Tish and Tom")]),
+              _vm._v(" "),
+              _c("h2", [_vm._v("San Francisco, City Hall")]),
+              _vm._v(" "),
+              _c("h3", [_vm._v(_vm._s(_vm.localTime))])
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row px-4" }, [
+        _c("div", {
+          staticClass: "d-flex col-md-7 justify-content-center p-2"
+        }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "d-flex col-md-5 align-items-center flex-column pt-0"
+          },
           [_c("TwitchPlayer")],
           1
         )
       ]),
       _vm._v(" "),
-      _vm._m(1),
+      _vm._m(0),
       _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "d-flex col-lg-12 justify-content-center p-2 text-center"
-          },
-          [
-            _c("h3", [
-              _vm._v(_vm._s(_vm.localTime)),
-              _c("br"),
-              _vm._v("in " + _vm._s(_vm.diff))
-            ])
-          ]
-        )
-      ])
+      _vm._m(1)
     ])
   ])
 }
@@ -14582,12 +14595,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "d-flex col-lg-12 justify-content-center pt-5 pb-2" },
-        [_c("h2", [_vm._v("Tish and Tom")])]
-      )
+    return _c("div", { staticClass: "row pt-4" }, [
+      _c("div", { staticClass: "d-flex col-md-12 justify-content-center p-2" })
     ])
   },
   function() {
@@ -14595,11 +14604,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "d-flex col-lg-12 justify-content-center p-2" },
-        [_c("h2", [_vm._v("San Francisco, City Hall")])]
-      )
+      _c("div", {
+        staticClass: "d-flex col-md-5 justify-content-center p-2 text-center"
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "d-flex col-md-7 justify-content-center p-2" })
     ])
   }
 ]
@@ -38401,7 +38410,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./asongforjennifer.ttf":[["asongforjennifer.279910e7.ttf","asongforjennifer.ttf"],"asongforjennifer.ttf"],"_css_loader":"../node_modules/parcel/src/builtins/css-loader.js"}],"../src/main.ts":[function(require,module,exports) {
+},{"./asongforjennifer.ttf":[["asongforjennifer.279910e7.ttf","asongforjennifer.ttf"],"asongforjennifer.ttf"],"./sf-clean.svg":[["sf-clean.f58fbe87.svg","sf-clean.svg"],"sf-clean.svg"],"_css_loader":"../node_modules/parcel/src/builtins/css-loader.js"}],"../src/main.ts":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -38450,7 +38459,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9709" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "6740" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

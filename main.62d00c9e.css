@@ -6,6 +6,9 @@ iframe {
   justify-content: center;
   display: flex;
 }
+
+.justify-content-flex-end {
+}
 #app {
   font-family: "ASongForJennifer", serif;
 
@@ -17,6 +20,18 @@ iframe {
   font-family: "ASongForJennifer";
   src: url("/asongforjennifer.279910e7.ttf") format("truetype");
 }
+body {
+  background: url("/sf-clean.f58fbe87.svg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-origin: inherit;
+}
+
+html {
+  height: 100%;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -79,7 +94,7 @@ body {
   line-height: 1.5;
   color: #333333;
   text-align: left;
-  background-color: antiquewhite;
+  background-color: #e7e8e3;
 }
 
 [tabindex="-1"]:focus {
@@ -495,7 +510,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: antiquewhite;
+  background-color: #e7e8e3;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -3567,13 +3582,13 @@ input[type=button].btn-block {
   outline: none;
 }
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px antiquewhite, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #e7e8e3, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px antiquewhite, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #e7e8e3, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px antiquewhite, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #e7e8e3, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .custom-range::-moz-focus-outer {
   border: 0;
@@ -3741,8 +3756,8 @@ input[type=button].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: antiquewhite;
-  border-color: #dee2e6 #dee2e6 antiquewhite;
+  background-color: #e7e8e3;
+  border-color: #dee2e6 #dee2e6 #e7e8e3;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -9872,13 +9887,13 @@ input[type=color].form-control:disabled {
 }
 
 .was-validated .custom-range:valid:focus::-webkit-slider-thumb, .custom-range.is-valid:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px antiquewhite, 0 0 0 0.2rem #9be7ac;
+  box-shadow: 0 0 0 1px #e7e8e3, 0 0 0 0.2rem #9be7ac;
 }
 .was-validated .custom-range:valid:focus::-moz-range-thumb, .custom-range.is-valid:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px antiquewhite, 0 0 0 0.2rem #9be7ac;
+  box-shadow: 0 0 0 1px #e7e8e3, 0 0 0 0.2rem #9be7ac;
 }
 .was-validated .custom-range:valid:focus::-ms-thumb, .custom-range.is-valid:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px antiquewhite, 0 0 0 0.2rem #9be7ac;
+  box-shadow: 0 0 0 1px #e7e8e3, 0 0 0 0.2rem #9be7ac;
 }
 .was-validated .custom-range:valid::-webkit-slider-thumb, .custom-range.is-valid::-webkit-slider-thumb {
   background-color: #28a745;
@@ -9931,13 +9946,13 @@ input[type=color].form-control:disabled {
 }
 
 .was-validated .custom-range:invalid:focus::-webkit-slider-thumb, .custom-range.is-invalid:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px antiquewhite, 0 0 0 0.2rem #f6cdd1;
+  box-shadow: 0 0 0 1px #e7e8e3, 0 0 0 0.2rem #f6cdd1;
 }
 .was-validated .custom-range:invalid:focus::-moz-range-thumb, .custom-range.is-invalid:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px antiquewhite, 0 0 0 0.2rem #f6cdd1;
+  box-shadow: 0 0 0 1px #e7e8e3, 0 0 0 0.2rem #f6cdd1;
 }
 .was-validated .custom-range:invalid:focus::-ms-thumb, .custom-range.is-invalid:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px antiquewhite, 0 0 0 0.2rem #f6cdd1;
+  box-shadow: 0 0 0 1px #e7e8e3, 0 0 0 0.2rem #f6cdd1;
 }
 .was-validated .custom-range:invalid::-webkit-slider-thumb, .custom-range.is-invalid::-webkit-slider-thumb {
   background-color: #dc3545;
