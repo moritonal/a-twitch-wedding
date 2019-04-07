@@ -2,13 +2,16 @@
   width: 90%;
 }
 #app {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'ASongForJennifer', serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC|Playfair+Display+SC");
+@font-face {
+  font-family: "ASongForJennifer";
+  src: url("/a song for jennifer.13b6f6a6.ttf") format("truetype");
+}
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
