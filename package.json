@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "parcel ./public/index.html",
-    "publish": "gh-pages -d dist",
-    "build": "parcel build ./public/index.html"
+    "publish": "gh-pages -d dist --dotfiles",
+    "build": "parcel build ./public/index.html --public-url ./"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.16",
     "jquery": "^3.3.1",
+    "moment": "^2.24.0",
     "parcel": "^1.12.3",
     "popper.js": "^1.15.0",
     "twitch-embed": "^1.1.4",

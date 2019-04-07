@@ -1,7 +1,10 @@
 $body-bg: antiquewhite;
 $body-color: #333333;
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC|Playfair+Display+SC');
+@font-face {
+    font-family: "ASongForJennifer";
+    src: url("./asongforjennifer.ttf") format('truetype');
+}
 
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
