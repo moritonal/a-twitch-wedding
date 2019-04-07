@@ -36,4 +36,13 @@ export default class TwitchPlayer extends Vue {
 
 <style>
 
+iframe {
+  max-width: 90%;
+}
+
+#twitch-embed {
+  justify-content: center;
+  display: flex;
+}
+
 </style>
