@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="container-fluid m-0 p-0 overflow-hidden">
+    <div class="container-fluid overflow-hidden">
       <div class="row">
         <div class="d-flex col-lg-12 justify-content-center pt-5 pb-2">
           <h2>Tish and Tom</h2>
@@ -17,13 +17,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="d-flex col-lg-12 justify-content-center p-1">
-          <h3>{{localTime}}</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="d-flex col-lg-12 justify-content-center p-1">
-          <h3>in {{diff}}</h3>
+        <div class="d-flex col-lg-12 justify-content-center p-2 text-center">
+          <h3>{{localTime}}<br>in {{diff}}</h3>
         </div>
       </div>
     </div>
