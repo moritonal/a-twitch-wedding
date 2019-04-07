@@ -1,3 +1,11 @@
+iframe {
+  max-width: 90%;
+}
+
+#twitch-embed {
+  justify-content: center;
+  display: flex;
+}
 #app {
   font-family: "ASongForJennifer", serif;
 

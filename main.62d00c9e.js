@@ -14544,7 +14544,7 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "app" } }, [
-    _c("div", { staticClass: "container-fluid m-0 p-0 overflow-hidden" }, [
+    _c("div", { staticClass: "container-fluid overflow-hidden" }, [
       _vm._m(0),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
@@ -14561,16 +14561,17 @@ exports.default = _default;
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "d-flex col-lg-12 justify-content-center p-1" },
-          [_c("h3", [_vm._v(_vm._s(_vm.localTime))])]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "d-flex col-lg-12 justify-content-center p-1" },
-          [_c("h3", [_vm._v("in " + _vm._s(_vm.diff))])]
+          {
+            staticClass:
+              "d-flex col-lg-12 justify-content-center p-2 text-center"
+          },
+          [
+            _c("h3", [
+              _vm._v(_vm._s(_vm.localTime)),
+              _c("br"),
+              _vm._v("in " + _vm._s(_vm.diff))
+            ])
+          ]
         )
       ])
     ])
@@ -38449,7 +38450,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8196" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9709" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
