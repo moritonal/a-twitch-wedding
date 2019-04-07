@@ -1,5 +1,5 @@
 <template>
-  <div class="major">
+  <div>
     <div id="twitch-embed"></div>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default class TwitchPlayer extends Vue {
   mounted() {
 
     var embed = new Twitch.Embed("twitch-embed", {
-      width: "100%",
+      width: 850,
       height: 480,
       layout: "video",
       theme: "dark",
@@ -35,9 +35,5 @@ export default class TwitchPlayer extends Vue {
 </script>
 
 <style>
-
-.major {
-  width: 90%;
-}
 
 </style>
