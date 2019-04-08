@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="twitch-embed"></div>
+    <div id="twitch-embed" class="justify-content-flex-end"></div>
   </div>
 </template>
 
@@ -16,8 +16,8 @@ export default class TwitchPlayer extends Vue {
   mounted() {
 
     var embed = new Twitch.Embed("twitch-embed", {
-      width: 850,
-      height: 480,
+      height: "100%",
+      width: "100%",
       layout: "video",
       theme: "dark",
       channel: "moritonal"
@@ -43,6 +43,14 @@ iframe {
 #twitch-embed {
   justify-content: center;
   display: flex;
+}
+
+.justify-content-flex-end {
+}
+
+#twitch-embed {
+  width: 70vmin;
+  height: calc(63vmin / (16/9));
 }
 
 </style>

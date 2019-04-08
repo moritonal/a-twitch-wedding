@@ -1,9 +1,23 @@
-$body-bg: antiquewhite;
+$body-bg: #e7e8e3;
 $body-color: #333333;
 
 @font-face {
     font-family: "ASongForJennifer";
     src: url("./asongforjennifer.ttf") format('truetype');
+}
+
+body {
+    background: url("./sf-clean.svg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-origin: inherit;
+
+    
+}
+
+html {
+    height: 100%;
 }
 
 @import 'node_modules/bootstrap/scss/bootstrap';

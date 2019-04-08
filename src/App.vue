@@ -1,24 +1,30 @@
 <template>
   <div id="app">
     <div class="container-fluid overflow-hidden">
-      <div class="row">
-        <div class="d-flex col-lg-12 justify-content-center pt-5 pb-2">
-          <h2>Tish and Tom</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="d-flex col-lg-12 justify-content-center p-2">
-          <TwitchPlayer/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="d-flex col-lg-12 justify-content-center p-2">
+      <div class="row px-4">
+        <div class="d-flex col-md-12 justify-content-center p-0 flex-column pt-4">
+        <div class="text-center p-3">
+        <h2>Tish and Tom</h2>
           <h2>San Francisco, City Hall</h2>
+          <h3>{{localTime}}</h3>
+        </div>
+        </div>
+      </div>
+      <div class="row px-4">
+        <div class="d-flex col-lg-7 justify-content-center p-2">
+        </div>
+        <div class="d-flex col-lg-5 align-items-center flex-column pt-0">
+          <TwitchPlayer></TwitchPlayer>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="d-flex col-lg-12 justify-content-center p-2">
         </div>
       </div>
       <div class="row">
-        <div class="d-flex col-lg-12 justify-content-center p-2 text-center">
-          <h3>{{localTime}}<br>in {{diff}}</h3>
+        <div class="d-flex col-lg-5 justify-content-center p-2 text-center">
+        </div>
+        <div class="d-flex col-lg-7 justify-content-center p-2">
         </div>
       </div>
     </div>
@@ -64,7 +70,7 @@ export default class App extends Vue {
   }
 
   get localTime() {
-    return this.targetUtc.local().format("Do MMMM YYYY [at] HH:mm [your time]");
+    return this.targetUtc.local().format("HH:mm DD[ | ]MM[ | ]YYYY");
   }
 
   get diff() {
