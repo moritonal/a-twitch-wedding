@@ -9464,8 +9464,8 @@ function (_super) {
 
   TwitchPlayer.prototype.mounted = function () {
     var embed = new Twitch.Embed("twitch-embed", {
-      height: 480,
-      width: 853.333333333,
+      height: "100%",
+      width: "100%",
       layout: "video",
       theme: "dark",
       channel: "moritonal"
@@ -14495,7 +14495,7 @@ function (_super) {
 
   Object.defineProperty(App.prototype, "localTime", {
     get: function get() {
-      return this.targetUtc.local().format("HH:mm[ | ]DD[ | ]MM[ | ]YYYY");
+      return this.targetUtc.local().format("HH:mm DD[ | ]MM[ | ]YYYY");
     },
     enumerable: true,
     configurable: true
@@ -14571,13 +14571,13 @@ exports.default = _default;
       _vm._v(" "),
       _c("div", { staticClass: "row px-4" }, [
         _c("div", {
-          staticClass: "d-flex col-md-7 justify-content-center p-2"
+          staticClass: "d-flex col-lg-7 justify-content-center p-2"
         }),
         _vm._v(" "),
         _c(
           "div",
           {
-            staticClass: "d-flex col-md-5 align-items-center flex-column pt-0"
+            staticClass: "d-flex col-lg-5 align-items-center flex-column pt-0"
           },
           [_c("TwitchPlayer")],
           1
@@ -14596,7 +14596,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row pt-4" }, [
-      _c("div", { staticClass: "d-flex col-md-12 justify-content-center p-2" })
+      _c("div", { staticClass: "d-flex col-lg-12 justify-content-center p-2" })
     ])
   },
   function() {
@@ -14605,10 +14605,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
       _c("div", {
-        staticClass: "d-flex col-md-5 justify-content-center p-2 text-center"
+        staticClass: "d-flex col-lg-5 justify-content-center p-2 text-center"
       }),
       _vm._v(" "),
-      _c("div", { staticClass: "d-flex col-md-7 justify-content-center p-2" })
+      _c("div", { staticClass: "d-flex col-lg-7 justify-content-center p-2" })
     ])
   }
 ]
@@ -38459,7 +38459,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "6740" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8746" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

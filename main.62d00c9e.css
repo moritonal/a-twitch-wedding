@@ -9,6 +9,11 @@ iframe {
 
 .justify-content-flex-end {
 }
+
+#twitch-embed {
+  width: 70vmin;
+  height: calc(63vmin / (16/9));
+}
 #app {
   font-family: "ASongForJennifer", serif;
 
