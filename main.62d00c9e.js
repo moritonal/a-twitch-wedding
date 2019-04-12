@@ -9545,269 +9545,6 @@ render._withStripped = true
       
       }
     })();
-},{"vue-property-decorator":"../node_modules/vue-property-decorator/lib/vue-property-decorator.js","_css_loader":"../node_modules/parcel/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"../src/components/GoogleMap.vue":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _vuePropertyDecorator = require("vue-property-decorator");
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-var __extends = void 0 && (void 0).__extends || function () {
-  var _extendStatics = function extendStatics(d, b) {
-    _extendStatics = Object.setPrototypeOf || {
-      __proto__: []
-    } instanceof Array && function (d, b) {
-      d.__proto__ = b;
-    } || function (d, b) {
-      for (var p in b) {
-        if (b.hasOwnProperty(p)) d[p] = b[p];
-      }
-    };
-
-    return _extendStatics(d, b);
-  };
-
-  return function (d, b) {
-    _extendStatics(d, b);
-
-    function __() {
-      this.constructor = d;
-    }
-
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-  };
-}();
-
-var __decorate = void 0 && (void 0).__decorate || function (decorators, target, key, desc) {
-  var c = arguments.length,
-      r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-      d;
-  if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-    if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  }
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var GoogleMap =
-/** @class */
-function (_super) {
-  __extends(GoogleMap, _super);
-
-  function GoogleMap() {
-    return _super !== null && _super.apply(this, arguments) || this;
-  }
-
-  GoogleMap.prototype.mounted = function () {};
-
-  GoogleMap = __decorate([(0, _vuePropertyDecorator.Component)({
-    components: {}
-  })], GoogleMap);
-  return GoogleMap;
-}(_vuePropertyDecorator.Vue);
-
-var _default = GoogleMap;
-exports.default = _default;
-        var $f156dd = exports.default || module.exports;
-      
-      if (typeof $f156dd === 'function') {
-        $f156dd = $f156dd.options;
-      }
-    
-        /* template */
-        Object.assign($f156dd, (function () {
-          var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-100" }, [
-      _c("iframe", {
-        staticStyle: { border: "0" },
-        attrs: {
-          width: "100%",
-          height: "450",
-          frameborder: "0",
-          src:
-            "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJY-bqepmAhYARSk9Xg_9tcLI&key=AIzaSyAlhvJUJVpv8Yzjrq6VFi_mkUShDZXDLdY",
-          allowfullscreen: ""
-        }
-      })
-    ])
-  }
-]
-render._withStripped = true
-
-          return {
-            render: render,
-            staticRenderFns: staticRenderFns,
-            _compiled: true,
-            _scopeId: null,
-            functional: undefined
-          };
-        })());
-      
-    /* hot reload */
-    (function () {
-      if (module.hot) {
-        var api = require('vue-hot-reload-api');
-        api.install(require('vue'));
-        if (api.compatible) {
-          module.hot.accept();
-          if (!module.hot.data) {
-            api.createRecord('$f156dd', $f156dd);
-          } else {
-            api.reload('$f156dd', $f156dd);
-          }
-        }
-
-        
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-      }
-    })();
-},{"vue-property-decorator":"../node_modules/vue-property-decorator/lib/vue-property-decorator.js","_css_loader":"../node_modules/parcel/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"../src/components/Chat.vue":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _vuePropertyDecorator = require("vue-property-decorator");
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-var __extends = void 0 && (void 0).__extends || function () {
-  var _extendStatics = function extendStatics(d, b) {
-    _extendStatics = Object.setPrototypeOf || {
-      __proto__: []
-    } instanceof Array && function (d, b) {
-      d.__proto__ = b;
-    } || function (d, b) {
-      for (var p in b) {
-        if (b.hasOwnProperty(p)) d[p] = b[p];
-      }
-    };
-
-    return _extendStatics(d, b);
-  };
-
-  return function (d, b) {
-    _extendStatics(d, b);
-
-    function __() {
-      this.constructor = d;
-    }
-
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-  };
-}();
-
-var __decorate = void 0 && (void 0).__decorate || function (decorators, target, key, desc) {
-  var c = arguments.length,
-      r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-      d;
-  if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-    if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  }
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var GoogleMap =
-/** @class */
-function (_super) {
-  __extends(GoogleMap, _super);
-
-  function GoogleMap() {
-    return _super !== null && _super.apply(this, arguments) || this;
-  }
-
-  GoogleMap.prototype.mounted = function () {};
-
-  GoogleMap = __decorate([(0, _vuePropertyDecorator.Component)({
-    components: {}
-  })], GoogleMap);
-  return GoogleMap;
-}(_vuePropertyDecorator.Vue);
-
-var _default = GoogleMap;
-exports.default = _default;
-        var $a18f1e = exports.default || module.exports;
-      
-      if (typeof $a18f1e === 'function') {
-        $a18f1e = $a18f1e.options;
-      }
-    
-        /* template */
-        Object.assign($a18f1e, (function () {
-          var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-100" }, [
-      _c("div", {
-        staticStyle: { width: "100%", height: "400px" },
-        attrs: {
-          id: "tlkio",
-          "data-channel": "atishandtomgetmarried",
-          "data-theme": "theme--night"
-        }
-      })
-    ])
-  }
-]
-render._withStripped = true
-
-          return {
-            render: render,
-            staticRenderFns: staticRenderFns,
-            _compiled: true,
-            _scopeId: null,
-            functional: undefined
-          };
-        })());
-      
-    /* hot reload */
-    (function () {
-      if (module.hot) {
-        var api = require('vue-hot-reload-api');
-        api.install(require('vue'));
-        if (api.compatible) {
-          module.hot.accept();
-          if (!module.hot.data) {
-            api.createRecord('$a18f1e', $a18f1e);
-          } else {
-            api.reload('$a18f1e', $a18f1e);
-          }
-        }
-
-        
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-      }
-    })();
 },{"vue-property-decorator":"../node_modules/vue-property-decorator/lib/vue-property-decorator.js","_css_loader":"../node_modules/parcel/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"../node_modules/moment/moment.js":[function(require,module,exports) {
 var define;
 var global = arguments[3];
@@ -14426,10 +14163,6 @@ var _vuePropertyDecorator = require("vue-property-decorator");
 
 var _TwitchPlayer = _interopRequireDefault(require("./components/TwitchPlayer"));
 
-var _GoogleMap = _interopRequireDefault(require("./components/GoogleMap"));
-
-var _Chat = _interopRequireDefault(require("./components/Chat"));
-
 var _moment = _interopRequireDefault(require("moment"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -14495,7 +14228,7 @@ function (_super) {
 
   Object.defineProperty(App.prototype, "localTime", {
     get: function get() {
-      return this.targetUtc.local().format("HH:mm DD[ | ]MM[ | ]YYYY");
+      return this.targetUtc.local().format("HH:mm[ - ]DD[ | ]MM[ | ]YYYY");
     },
     enumerable: true,
     configurable: true
@@ -14519,9 +14252,7 @@ function (_super) {
 
   App = __decorate([(0, _vuePropertyDecorator.Component)({
     components: {
-      TwitchPlayer: _TwitchPlayer.default,
-      GoogleMap: _GoogleMap.default,
-      Chat: _Chat.default
+      TwitchPlayer: _TwitchPlayer.default
     },
     data: function data() {
       return {
@@ -14644,7 +14375,7 @@ render._withStripped = true
       
       }
     })();
-},{"vue-property-decorator":"../node_modules/vue-property-decorator/lib/vue-property-decorator.js","./components/TwitchPlayer":"../src/components/TwitchPlayer.vue","./components/GoogleMap":"../src/components/GoogleMap.vue","./components/Chat":"../src/components/Chat.vue","moment":"../node_modules/moment/moment.js","_css_loader":"../node_modules/parcel/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"../node_modules/vue-functional-data-merge/dist/lib.esm.js":[function(require,module,exports) {
+},{"vue-property-decorator":"../node_modules/vue-property-decorator/lib/vue-property-decorator.js","./components/TwitchPlayer":"../src/components/TwitchPlayer.vue","moment":"../node_modules/moment/moment.js","_css_loader":"../node_modules/parcel/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"../node_modules/vue-functional-data-merge/dist/lib.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38459,7 +38190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8746" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11314" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
