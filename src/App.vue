@@ -14,7 +14,7 @@
         <div class="d-flex col-lg-7 justify-content-center p-2">
         </div>
         <div class="d-flex col-lg-5 align-items-center flex-column pt-0">
-          <TwitchPlayer></TwitchPlayer>
+          <YoutubePlayer></YoutubePlayer>
         </div>
       </div>
       <div class="row pt-4">
@@ -34,15 +34,13 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import TwitchPlayer from "./components/TwitchPlayer";
-import GoogleMap from "./components/GoogleMap";
-import Chat from "./components/Chat";
+import YoutubePlayer from "./components/YoutubePlayer";
 import moment from "moment";
 
 @Component({
   components: {
     TwitchPlayer,
-    GoogleMap,
-    Chat
+    YoutubePlayer
   },
   data: () => {
     return {
@@ -62,6 +60,7 @@ export default class App extends Vue {
   }
 
   created() {
+
     this.targetUtc = moment.utc("2019-04-15T20:30");
 
     this.interval = setInterval(() => {
@@ -70,7 +69,7 @@ export default class App extends Vue {
   }
 
   get localTime() {
-    return this.targetUtc.local().format("HH:mm DD[ | ]MM[ | ]YYYY");
+    return this.targetUtc.local().format("HH:mm[ - ]DD[ | ]MM[ | ]YYYY");
   }
 
   get diff() {
